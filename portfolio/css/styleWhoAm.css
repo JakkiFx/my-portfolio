@@ -1,0 +1,120 @@
+.scroll-2 {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 30px;
+    background: linear-gradient(
+        90deg,
+        #480365,
+        #000659);
+        transition: .5s;
+}
+.zero_opacity {
+    opacity: 0;
+    transition: 3s;
+}
+.opacity {
+    opacity: 1;
+    transition: 1s;
+}
+.scroll-2 .section-name {
+    color: rgba(255, 255, 255, .8);
+    font-weight: 400;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.introduction-container_who-am {
+    width: 80%;
+    height: 800px;
+    flex-direction: column;
+    color: rgba(255, 255, 255, .8);
+}
+
+.container-image {
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.image-me {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: url("https://avatars.githubusercontent.com/u/103477156?v=4");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-content_who-am {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.who-am_infor-top {
+    width: 100%;
+    height: 60%;
+    font-size: .9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.who-am_infor-top a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.caracters {
+    width: 100%;
+    height: 200px;
+    border: 2px solid rgba(196, 255, 116, .1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+}
+
+.caracters .item {
+    width: 100%;
+    padding: 12px 0 12px 0;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(146, 213, 45);
+    background: rgba(0, 6, 89, .5);
+}
+
+.caracters .item:hover {
+    background: greenyellow;
+    color: #000659;
+}
+
+.who-am_infor-below {
+    width: 100%;
+    height: 40%;
+    margin-top: 1em;
+}
+
+@media screen and (min-width: 650px) {
+    .scroll-2 {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 30px;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(180deg, #714782, #101ddc);
+    }
+
+    .who-am_infor-top {
+        font-size: 1.1em;
+    }
+}

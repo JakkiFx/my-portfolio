@@ -1,0 +1,105 @@
+.scroll-4 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg,
+            #480365,
+            #000659);
+    flex-direction: column;
+    justify-content: space-around;
+    transition: .5s;
+}
+
+.scroll-4 .section-name {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.grid-images-projects {
+    width: 85%;
+    height: 85vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grid-images-projects .img-calc {
+    width: 100%;
+    height: 33%;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.img-calc img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.grid-images-projects .img-proj {
+    width: 100%;
+    height: 33%;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.img-proj img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.grid-images-projects .name-project-future {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.name-project-future .future {
+    font-size: 1.3em;
+    color: greenyellow;
+    font-weight: 350;
+}
+
+.name-project {
+    width: 100%;
+    padding: 15px 0 15px 0;
+    position: absolute;
+    font-size: 1.2em;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+
+@media screen and (min-width: 650px) {
+    .grid-images-projects {
+        width: 60%
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .grid-images-projects {
+        width: 30%
+    }
+}

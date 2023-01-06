@@ -1,0 +1,56 @@
+.scroll-3 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg,
+            #480365,
+            #000659);
+    flex-direction: column;
+    transition: .5s;
+}
+
+.scroll-3 .section-name {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.grid-images {
+    width: 95%;
+    height: 85vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grid-images div {
+    width: 27%;
+    height: 15%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.grid-images img {
+    width: 100%;
+}
+.img-html img {
+    width: 86%;
+}
+.grid-images .logo:hover {
+    background: rgba(255, 255, 255, .4);
+}
+
+@media screen and (min-width: 650px) {
+    .grid-images {
+        width: 60%;
+        height: 85vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .grid-images {
+        width: 30%;
+        height: 85vh;
+    }
+}
